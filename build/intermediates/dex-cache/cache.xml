@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/aknahs/Development/android-quickeditor1/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="/home/aknahs/Development/android-quickeditor1/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-eb78f094c06d3418ea3309466e670ee9b9f74fbc.jar" />
+    </item>
+    <item
+        jar="/home/aknahs/Development/android-quickeditor1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.71/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
+        <dex dex="/home/aknahs/Development/android-quickeditor1/app/build/intermediates/pre-dexed/debug/classes-d0e81417b803f0cf9dcff53576390a6e5277280c.jar" />
+    </item>
+    <item
+        jar="/home/aknahs/Development/android-quickeditor1/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/home/aknahs/Development/android-quickeditor1/app/build/intermediates/pre-dexed/debug/classes-d81c4dc364af49a9aff40de48c0d964b5417d13d.jar" />
+    </item>
+    <item
+        jar="/home/aknahs/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="/home/aknahs/Development/android-quickeditor1/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-56d2645d4b1e891edb552ed2f63a950fbc0a42d8.jar" />
+    </item>
+
+</items>
