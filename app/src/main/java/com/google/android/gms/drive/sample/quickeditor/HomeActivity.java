@@ -90,6 +90,10 @@ public class HomeActivity extends BaseDriveActivity {
      * Currently opened file's contents.
      */
     private DriveContents mDriveContents;
+    /**
+     * Currently opened file's content string.
+     */
+    public String mContents = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -207,13 +211,7 @@ public class HomeActivity extends BaseDriveActivity {
         }
 
         mTitleEditText.setText(mMetadata.getTitle());
-        try {
-            String contents = Utils.readFromInputStream(mDriveContents.getInputStream());
-            mContentsEditText.setText(contents);
-        } catch (IOException e) {
-            // TODO: handle it better, at least an error message
-            Log.e(TAG, "IOException while reading from contents input stream", e);
-        }
+        mContentsEditText.setText(mContents);
     }
 
     /**
@@ -255,6 +253,15 @@ public class HomeActivity extends BaseDriveActivity {
                 Log.v(TAG, "Set mMetadata and mDriveContents");
                 mMetadata = meta.getMetadata();
                 mDriveContents = res.getDriveContents();
+                
+                try {
+                    mContents = Utils.readFromInputStream(
+                            mDriveContents.getContents().getInputStream());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                file.discardContents(mGoogleApiClient, mDriveContents.getContents()).await();
 
                 runOnUiThread(new Runnable() {
                     @Override
